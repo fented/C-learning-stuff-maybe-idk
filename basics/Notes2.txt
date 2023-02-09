@@ -1,0 +1,31 @@
+// must use decimal when dividing 'unevenly'
+
+decimal decimalQuotient = 7.0m / 5;
+Console.WriteLine("Decimal quotient: " + decimalQuotient);
+
+//works the same
+decimal decimalQuotient = 7 / 5.0m;
+decimal decimalQuotient = 7.0m / 5.0m;
+Console.WriteLine("Decimal quotient: " + decimalQuotient);
+
+//can set decimals this way too
+int first = 7;
+int second = 5;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient);
+
+// can use % to get the remainder
+Console.WriteLine("Modulus of 200 / 5 : " + (200 % 5));
+Console.WriteLine("Modulus of 7 / 5 : " + (7 % 5));
+
+// the += operator adds the value on the right to the value on the left, so lines 2 and 3 are the same
+int value = 0;
+value = value + 5;
+value += 5;
+
+// the ++ operator adds 1 to the value, -- subtracts 1
+int value = 1;
+value++;
+Console.WriteLine("Third increment: " + value);
+value--;
+Console.WriteLine("Third decrement: " + value);
