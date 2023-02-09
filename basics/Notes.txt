@@ -1,0 +1,55 @@
+Console.WriteLine('a'); // single quotes store a single literal
+Console.WriteLine("double quotes store a literal as a string");
+
+Console.WriteLine(12.30m); //the "m" sets the literal to a decimal
+
+Console.WriteLine(true);
+Console.WriteLine(false); // True/False are bool literals
+
+string firstName; // Created string called "firstName"
+
+// Variable examples/types
+char userOption;
+int gameScore;
+decimal particlesPerMillion;
+bool processedCustomer;
+
+
+// can set variable 'automatically' with 'var', but must be initalized (have a set value) before running
+var message = "Hello World!";
+Console.WriteLine(message);
+
+
+
+
+// escape characters:
+
+// \n will make a new line, while \t will add a tab.
+Console.Write("Hello\nWorld\t!");
+
+// the '\' will also escape the next character, for example, double quotes inside of quotes.
+Console.WriteLine("Hello \"World\"!");
+
+// @ will make it so you don't need to use the \ to escape a character, and it will keep all whitespace formatting.
+Console.WriteLine(@"   c:\source\repos   ");
+
+// \u will print unicode charaters
+Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!"); // chinese(i think) characters in unicode
+
+
+
+// can add variables to eachother
+string firstName = "Bob";
+string message = "Hello " + firstName;
+Console.WriteLine(message);
+
+// you can concatenate while to make an intermediate variable, but should only do so when needed.
+string firstName = "Cole";
+string greeting = "Hello, ";
+string fullGreet = greeting + firstName + "!";
+Console.WriteLine(fullGreet);
+
+// using $, we can use variables inside of quotes. Like before, we want to avoid using intermediate variables.
+string firstName = "Bob";
+string greeting = "Hello";
+Console.WriteLine($"{greeting} {firstName}!");
